@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ramadhan Harahap — Portfolio Panjang</title>
+  <meta name="description" content="Portfolio Ramadhan Harahap — web developer & IoT maker. Contoh proyek, timeline, testimonial." />
+  <meta name="author" content="Ramadhan Harahap" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Local style -->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container container-lg">
+      <a class="navbar-brand" href="#">Ramadhan Harahap</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navResp">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navResp">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#timeline">Timeline</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonial">Testimonial</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO / HOME -->
+  <header id="home" class="hero">
+    <div class="container container-lg" data-aos="fade-up">
+      <h1>Halo, saya Ramadhan Harahap</h1>
+      <p class="lead">Mahasiswa Teknologi Informasi (UMTS) • Alumni SMKN 2 Padangsidimpuan • Anak terakhir dari 4 bersaudara • Pecinta bola dan pembuat proyek digital</p>
+      <img src="https://placehold.co/300x300/87CEFA/ffffff?text=Foto" alt="avatar" class="avatar" loading="lazy" />
+      <div style="margin-top:20px;">
+        <a href="#projects" class="btn btn-primary-cta me-2">Lihat Proyek</a>
+        <a href="#contact" class="btn btn-outline-light" style="border-radius:12px;">Kontak Saya</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="bg-light">
+    <div class="container container-lg" data-aos="fade-up">
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <div class="card card-compact p-4">
+            <h4>Profil Singkat</h4>
+            <p>Nama: <strong>Ramadhan Harahap</strong></p>
+            <p>Tempat & Tanggal Lahir: <strong>Silaubosar, 16 November 2004</strong></p>
+            <p>Alamat Sekarang: <strong>Simirik Balakka, Nalomak</strong></p>
+            <p>Nomor HP: <strong>0838-2184-1716</strong></p>
+            <p>Pendidikan: <strong>Mahasiswa UMTS - Prodi Teknologi Informasi (Semester 5)</strong></p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card card-compact p-4">
+            <h4>Ringkasan</h4>
+            <p>Saya fokus pada pengembangan web, aplikasi kecil, dan proyek IoT sederhana. Suka kolaborasi tim dan prototyping cepat.</p>
+            <hr>
+            <h5>Tools & Teknologi</h5>
+            <ul>
+              <li>HTML, CSS, JavaScript (ES6+)</li>
+              <li>Bootstrap 5, responsive design</li>
+              <li>PHP & MySQL dasar</li>
+              <li>React (pengalaman dasar)</li>
+              <li>IoT: Arduino, ESP8266</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOBBIES -->
+  <section id="hobbies">
+    <div class="container container-lg" data-aos="fade-up">
+      <h2 class="section-title">Hobi</h2>
+      <div class="row g-4">
+        <!-- HOBBY 1 -->
+        <div class="col-md-4">
+          <div class="card card-compact p-4 text-center hobby-card" data-bs-toggle="modal" data-bs-target="#hobbyModal1">
+            <img src="https://img.icons8.com/emoji/96/soccer-ball-emoji.png" alt="bola" style="width:96px;height:96px;" loading="lazy">
+            <h5 class="mt-3">Bermain Bola</h5>
+            <p class="text-muted">Olahraga & teamwork</p>
+          </div>
+        </div>
+
+        <!-- HOBBY 2 -->
+        <div class="col-md-4">
+          <div class="card card-compact p-4 text-center hobby-card" data-bs-toggle="modal" data-bs-target="#hobbyModal2">
+            <img src="https://img.icons8.com/emoji/96/video-game-emoji.png" alt="game" style="width:96px;height:96px;" loading="lazy">
+            <h5 class="mt-3">Main Game</h5>
+            <p class="text-muted">Refreshing & strategi</p>
+          </div>
+        </div>
+
+        <!-- HOBBY 3 -->
+        <div class="col-md-4">
+          <div class="card card-compact p-4 text-center hobby-card" data-bs-toggle="modal" data-bs-target="#hobbyModal3">
+            <img src="https://img.icons8.com/emoji/96/book-emoji.png" alt="baca" style="width:96px;height:96px;" loading="lazy">
+            <h5 class="mt-3">Membaca</h5>
+            <p class="text-muted">Wawasan & kreativitas</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- extra hobby row for length -->
+      <div class="row g-4 mt-3">
+        <div class="col-sm-6 col-md-4">
+          <div class="card card-compact p-3 text-center">
+            <img src="https://img.icons8.com/fluency/96/football2.png" alt="" style="width:72px;height:72px;" loading="lazy">
+            <h6 class="mt-2">Latihan Fisik</h6>
+            <p class="small text-muted mb-0">Cardio & endurance</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card card-compact p-3 text-center">
+            <img src="https://img.icons8.com/fluency/96/microphone.png" alt="" style="width:72px;height:72px;" loading="lazy">
+            <h6 class="mt-2">Podcast & Musik</h6>
+            <p class="small text-muted mb-0">Koleksi & inspirasi</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card card-compact p-3 text-center">
+            <img src="https://img.icons8.com/fluency/96/idea.png" alt="" style="width:72px;height:72px;" loading="lazy">
+            <h6 class="mt-2">Brainstorming</h6>
+            <p class="small text-muted mb-0">Ide-ide proyek</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOBBY MODALS -->
+  <div class="modal fade" id="hobbyModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Bermain Bola</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Saya suka bermain bola karena olahraga ini menantang, meningkatkan kerja sama tim, keterampilan teknis, dan kebugaran fisik. Di lapangan saya belajar disiplin, strategi, dan komunikasi.</p>
+          <ul>
+            <li>Posisi favorit: Penyerang / Winger</li>
+            <li>Latihan rutin: dribbling, passing, conditioning</li>
+            <li>Turnamen lokal: beberapa pengalaman tim sekolah</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="hobbyModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Main Game</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Game memberi hiburan dan mengasah kemampuan pemecahan masalah serta refleks. Saya suka game strategi dan simulasi jaringan.</p>
+          <p>Platform: PC & konsol ringan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="hobbyModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Membaca</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Membaca membantu menambah wawasan dan inspirasi. Saya suka artikel teknologi, tutorial pengembangan web, dan buku non-fiksi tentang produktivitas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container container-lg" data-aos="fade-up">
+      <h2 class="section-title">Proyek - Portfolio</h2>
+
+      <div class="row g-4" id="projectsGrid">
+        <!-- Project cards inserted by HTML for now -->
+        <!-- We'll keep 9 sample cards; can duplicate in app.js if you want 30 -->
+        <div class="col-md-4">
+          <article class="card card-compact p-3 text-center project-card" data-project="1" tabindex="0">
+            <img data-src="https://placehold.co/600x360?text=Project+1" alt="proj" class="proj-img mb-3 lazy">
+            <h5>Aplikasi Pencari Kos</h5>
+            <p class="small text-muted">Prototype & UI + Frontend</p>
+            <div class="mt-2">
+              <button class="btn btn-sm btn-outline-primary view-project" data-bs-toggle="modal" data-bs-target="#projectModal1">Detail</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="card card-compact p-3 text-center project-card" data-project="2" tabindex="0">
+            <img data-src="https://placehold.co/600x360?text=Project+2" alt="proj" class="proj-img mb-3 lazy">
+            <h5>Sistem Keamanan Rumah Pintar</h5>
+            <p class="small text-muted">IoT + sensor + notifikasi</p>
+            <div class="mt-2"><button class="btn btn-sm btn-outline-primary view-project" data-bs-toggle="modal" data-bs-target="#projectModal2">Detail</button></div>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="card card-compact p-3 text-center project-card" data-project="3" tabindex="0">
+            <img data-src="https://placehold.co/600x360?text=Project+3" alt="proj" class="proj-img mb-3 lazy">
+            <h5>Website E-Government</h5>
+            <p class="small text-muted">Informasi publik & pengumuman</p>
+            <div class="mt-2"><button class="btn btn-sm btn-outline-primary view-project" data-bs-toggle="modal" data-bs-target="#projectModal3">Detail</button></div>
+          </article>
+        </div>
+
+        <!-- 6 more cards (4-9) -->
+        <div class="col-md-4">
+          <article class="card card-compact p-3 text-center project-card" data-project="4" tabindex="0">
+            <img data-src="https://placehold.co/600x360?text=Project+4" alt="proj" class="proj-img mb-3 lazy">
+            <h5>Portofolio Website</h5>
+            <p class="small text-muted">Desain modern + AOS</p>
+            <div class="mt-2"><button class="btn btn-sm btn-outline-primary view-project" data-bs-toggle="modal" data-bs-target="#projectModal4">Detail</button></div>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="card card-compact p-3 text-center project-card" data-project="5" tabindex="0">
+            <img data-src="https://placehold.co/600x360?text=Project+5" alt="proj" class="proj-img mb-3 lazy">
+            <h5>Aplikasi Inventaris</h5>
+            <p class="small text-muted">CRUD, laporan</p>
+            <div class="mt-2"><button class="btn btn-sm btn-outline-primary view-project" data-bs-toggle="modal" data-bs-target="#projectModal5">Detail</button></div>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="card card-compact p-3 text-center project-card" data-project="6" tabindex="0">
+            <img data-src="https://placehold.co/600x360?text=Project+6" alt="proj" class="proj-img mb-3 lazy">
+            <h5>Sistem Antrian Online</h5>
+            <p class="small text-muted">Token digital & realtime</p>
+            <div class="mt-2"><button class="btn btn-sm btn-outline-primary view-project" data-bs-toggle="modal" data-bs-target="#projectModal6">Detail</button></div>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="card card-compact p-3 text-center project-card" data-project="7" tabindex="0">
+            <img data-src="https://placehold.co/600x360?text=Project+7" alt="proj" class="proj-img mb-3 lazy">
+            <h5>Dashboard Statistik</h5>
+            <p class="small text-muted">Charts & visualisasi data</p>
+            <div class="mt-2"><button class="btn btn-sm btn-outline-primary view-project" data-bs-toggle="modal" data-bs-target="#projectModal7">Detail</button></div>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="card card-compact p-3 text-center project-card" data-project="8" tabindex="0">
+            <img data-src="https://placehold.co/600x360?text=Project+8" alt="proj" class="proj-img mb-3 lazy">
+            <h5>Aplikasi Catatan Harian</h5>
+            <p class="small text-muted">Penyimpanan lokal & offline</p>
+            <div class="mt-2"><button class="btn btn-sm btn-outline-primary view-project" data-bs-toggle="modal" data-bs-target="#projectModal8">Detail</button></div>
+          </article>
+        </div>
+
+        <div class="col-md-4">
+          <article class="card card-compact p-3 text-center project-card" data-project="9" tabindex="0">
+            <img data-src="https://placehold.co/600x360?text=Project+9" alt="proj" class="proj-img mb-3 lazy">
+            <h5>Integrasi IoT sederhana</h5>
+            <p class="small text-muted">Sensor suhu & web</p>
+            <div class="mt-2"><button class="btn btn-sm btn-outline-primary view-project" data-bs-toggle="modal" data-bs-target="#projectModal9">Detail</button></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modals (one template repeated) -->
+  <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Aplikasi Pencari Kos</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Deskripsi:</strong> Proyek untuk membantu mencari kos di area Padangsidimpuan. Pencarian, filter harga, peta sederhana.</p>
+          <p><strong>Stack:</strong> HTML, Bootstrap, JS, PHP, MySQL.</p>
+          <hr>
+          <h6>Fitur</h6>
+          <ul><li>Pencarian & filter</li><li>Halaman detail</li><li>Form kontak</li></ul>
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="btn btn-primary">Lihat Demo</a>
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 2..9 copy (concise for brevity, content same pattern) -->
+  <div class="modal fade" id="projectModal2" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Sistem Keamanan Rumah Pintar</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Monitoring sensor, prototyping Arduino/ESP.</p></div><div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button></div></div></div></div>
+
+  <div class="modal fade" id="projectModal3" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Website E-Government</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Platform informasi publik & pengumuman.</p></div><div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button></div></div></div></div>
+
+  <div class="modal fade" id="projectModal4" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Portofolio Website</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Responsive portfolio dengan animasi.</p></div><div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button></div></div></div></div>
+
+  <div class="modal fade" id="projectModal5" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Aplikasi Inventaris</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>CRUD, laporan, CSV export.</p></div><div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button></div></div></div></div>
+
+  <div class="modal fade" id="projectModal6" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Sistem Antrian Online</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Token digital, tampilan real-time.</p></div><div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button></div></div></div></div>
+
+  <div class="modal fade" id="projectModal7" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Dashboard Statistik</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Visualisasi chart & laporan.</p></div><div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button></div></div></div></div>
+
+  <div class="modal fade" id="projectModal8" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Aplikasi Catatan Harian</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Offline-first notes app.</p></div><div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button></div></div></div></div>
+
+  <div class="modal fade" id="projectModal9" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Integrasi IoT</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>Monitoring suhu & kualitas lingkungan.</p></div><div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button></div></div></div></div>
+
+  <!-- SKILLS -->
+  <section id="skills" class="bg-light">
+    <div class="container container-lg" data-aos="fade-up">
+      <h2 class="section-title">Keahlian</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="skill-row">
+            <div class="d-flex justify-content-between">
+              <div class="skill-label">HTML & CSS</div>
+              <div class="small text-muted">90%</div>
+            </div>
+            <div class="progress mt-2"><div class="progress-bar bg-info" role="progressbar" style="width:90%">90%</div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="d-flex justify-content-between">
+              <div class="skill-label">JavaScript</div>
+              <div class="small text-muted">80%</div>
+            </div>
+            <div class="progress mt-2"><div class="progress-bar bg-info" role="progressbar" style="width:80%">80%</div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="d-flex justify-content-between">
+              <div class="skill-label">Bootstrap</div>
+              <div class="small text-muted">85%</div>
+            </div>
+            <div class="progress mt-2"><div class="progress-bar bg-info" role="progressbar" style="width:85%">85%</div></div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="skill-row">
+            <div class="d-flex justify-content-between">
+              <div class="skill-label">PHP & MySQL</div>
+              <div class="small text-muted">75%</div>
+            </div>
+            <div class="progress mt-2"><div class="progress-bar bg-info" role="progressbar" style="width:75%">75%</div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="d-flex justify-content-between">
+              <div class="skill-label">IoT (Arduino)</div>
+              <div class="small text-muted">70%</div>
+            </div>
+            <div class="progress mt-2"><div class="progress-bar bg-info" role="progressbar" style="width:70%">70%</div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="d-flex justify-content-between">
+              <div class="skill-label">UI/UX dasar</div>
+              <div class="small text-muted">65%</div>
+            </div>
+            <div class="progress mt-2"><div class="progress-bar bg-info" role="progressbar" style="width:65%">65%</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section id="timeline">
+    <div class="container container-lg" data-aos="fade-up">
+      <h2 class="section-title">Timeline Pendidikan & Pengalaman</h2>
+      <div class="timeline">
+        <div class="timeline-item timeline-item-left" style="position:relative;">
+          <div class="timeline-dot"></div>
+          <div class="bubble">
+            <h6>SMKN 2 Padangsidimpuan — Teknik Audio Video</h6>
+            <p class="small text-muted mb-0">2019 — 2022</p>
+            <p class="small mt-2">Belajar dasar audio, video, dan praktik teknis.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item-right" style="position:relative;">
+          <div class="timeline-dot"></div>
+          <div class="bubble">
+            <h6>Mahasiswa UMTS — Teknologi Informasi</h6>
+            <p class="small text-muted mb-0">2022 — sekarang</p>
+            <p class="small mt-2">Kuliah, proyek tugas akhir, magang.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item-left" style="position:relative;">
+          <div class="timeline-dot"></div>
+          <div class="bubble">
+            <h6>Magang: Kantor Pos Padangsidimpuan</h6>
+            <p class="small text-muted mb-0">Magang 2023</p>
+            <p class="small mt-2">Automasi & dokumentasi website.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item-right" style="position:relative;">
+          <div class="timeline-dot"></div>
+          <div class="bubble">
+            <h6>Project Freelance & Volunteer</h6>
+            <p class="small text-muted mb-0">2023 — 2024</p>
+            <p class="small mt-2">Website kecil & solusi digital lokal.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item-left" style="position:relative;">
+          <div class="timeline-dot"></div>
+          <div class="bubble">
+            <h6>Pengembangan Skill Berkelanjutan</h6>
+            <p class="small text-muted mb-0">2024 — Sekarang</p>
+            <p class="small mt-2">Belajar React, performa, dan DevOps sederhana.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section id="testimonial" class="bg-light">
+    <div class="container container-lg" data-aos="fade-up">
+      <h2 class="section-title">Testimonial</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <p>"Ramadhan cepat memahami tugas dan mampu menyelesaikan modul frontend dengan rapi."</p>
+            <div class="mt-2 testimonial-name">Dosen Pembimbing</div>
+            <div class="small text-muted">UMTS</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <p>"Kerja timnya solid, bertanggung jawab dan inisiatif saat magang."</p>
+            <div class="mt-2 testimonial-name">Supervisor Magang</div>
+            <div class="small text-muted">Kantor Pos Padangsidimpuan</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <p>"Hasil portofolio menunjukkan kemampuan desain dan implementasi yang baik."</p>
+            <div class="mt-2 testimonial-name">Rekan Proyek</div>
+            <div class="small text-muted">Kolaborator</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container container-lg" data-aos="fade-up">
+      <h2 class="section-title">Kontak</h2>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="contact-card">
+            <h5>Hubungi Saya</h5>
+            <p class="small text-muted">Isi form di samping atau hubungi langsung.</p>
+            <ul class="list-unstyled">
+              <li><strong>Nomor HP:</strong> 0838-2184-1716</li>
+              <li><strong>Email:</strong> (isikan email jika mau ditampilkan)</li>
+              <li><strong>Alamat:</strong> Simirik Balakka, Nalomak</li>
+            </ul>
+            <hr>
+            <h6>Social</h6>
+            <div class="d-flex gap-2">
+              <a href="#" class="btn btn-outline-primary btn-sm">GitHub</a>
+              <a href="#" class="btn btn-outline-primary btn-sm">LinkedIn</a>
+              <a href="#" class="btn btn-outline-primary btn-sm">Instagram</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="contact-card">
+            <form id="contactForm" onsubmit="return handleContactSubmit(event)">
+              <div class="mb-3">
+                <label class="form-label">Nama</label>
+                <input class="form-control" id="cname" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" id="cemail" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Pesan</label>
+                <textarea class="form-control" id="cmessage" rows="5" required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Kirim Pesan</button>
+            </form>
+            <div id="contactResult" class="mt-3" style="display:none;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container container-lg">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+          <strong>© 2025 Ramadhan Harahap</strong>
+          <div class="small text-muted">All rights reserved.</div>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#home" class="text-white small me-3">Back to top</a>
+          <a href="#" class="text-white small me-3">Privacy</a>
+          <a href="#" class="text-white small">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Local JS -->
+  <script src="app.js"></script>
+</body>
+</html>
